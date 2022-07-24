@@ -21,7 +21,7 @@ provider "aws" {
 # A resource might be a physical or virtual component such as an EC2 instance,
 #  or it can be a logical resource such as a Heroku application.
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-08d70e59c07c61a3a"
   instance_type = "t2.micro"
 
   tags = {
