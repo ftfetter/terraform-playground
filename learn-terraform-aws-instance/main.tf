@@ -25,6 +25,12 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    name = "ExampleAppServerInstance"
+    name = var.instance_name
   }
+}
+
+variable "instance_name" {
+  description = "Value of the Name tag for the EC2 instance"
+  type        = string
+  default     = "ExampleAppServerInstance"
 }
